@@ -1,9 +1,157 @@
 
 .App-header {
   position: relative;
-  background-color: #ddd;
+  background-color: #eee;
   height: 30px;
   padding: 20px;
   color: #333;
+  z-index: 2;
 }
 
+.App-header span {
+  position: absolute; 
+  top: 25px;
+  left: 40px;
+  font-size: 20px;
+  color: #222;
+}
+
+.Nav-icon {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 35px;
+  border: 1px solid #222;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.Nav-icon:hover { 
+  color: red; 
+  border-color: red; 
+}
+
+.Nav-menu-container {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  line-height: 40px;
+  width: 200px;
+  background-color: #eee;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.Nav-menu-item {
+  color: #222;
+  cursor: pointer;
+}
+
+.Nav-menu-item:hover { 
+  color: red; 
+}
+
+a {text-decoration: none;}
+
+.react-pagination-table {
+    position: relative;
+    border-radius: 1px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    width: 93%;
+    margin: auto;
+}
+
+.react-pagination-table .sub-title {
+    float: right;
+}
+
+.react-pagination-table .title,
+.react-pagination-table .sub-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    font-weight:100;
+    padding: 20px 20px 10px;
+}
+
+.react-pagination-table .box {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 1px;
+    padding: 10px;
+}
+
+.react-pagination-table .table-header {
+    background: #e8e8e8;
+}
+
+.react-pagination-table .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.react-pagination-table .table>tbody>tr>td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.pagination-status {
+    float: right;
+}
+
+.pagination-status li {
+    display: inline;
+    cursor: pointer;
+}
+
+.pagination-status>li:first-child>a {
+    margin-left: 0;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.pagination-status>li:last-child>a {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.pagination-status>li>a {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination-status>li>a:hover {
+    border-color: #666;
+    background: #666;
+    color: #eee;
+}
+
+.pagination-status>.active>a,
+.pagination-status>.active>a:focus,
+.pagination-status>.active>a:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #666;
+    border-color: #666;
+}

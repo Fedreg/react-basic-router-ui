@@ -1,10 +1,12 @@
 import React from 'react'
-// import glamorous from "glamorous"
+import glamorous from "glamorous"
 
-export const Page5 = (props) => {
-  return(
-    <h1>Page5</h1>
-  )
+const Page5Container = glamorous.div({
+  marginTop: "200px",
+  textAlign: "center",
+  fontSize: "60px"
+})
+
+export const Page5 = () => {
+  return <Page5Container>Page 5</Page5Container>
 }
-
-export default Page5
